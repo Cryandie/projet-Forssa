@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap");
+.register-dad,
+.register-title {
+  text-align: center;
+  color: rgb(52, 16, 98);
+}
+.register-dad {
+  margin-top: 35px;
+}
+.register-btn {
+  margin-top: 5px;
+  background-color: rgb(200, 145, 251);
+  font-size: 17px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 150px;
+  height: 40px;
+}
+.register-btn:hover {
+  border: 4px rgba(145, 69, 245, 0.281) solid;
+  border-radius: 20px;
+  font-weight: bolder;
+}
+.register-btn:focus {
+  width: 150px;
+  border: 4px rgba(145, 69, 245, 0.281) solid;
+  border-radius: 20px;
+  font-weight: bolder;
+  outline: none;
+}
+.login-redirect {
+  margin-top: 35px;
+  font-size: 12px;
+}
+.login-btn-redirect {
+  width: max-content;
+  padding: 5px;
+}
+
+.register-input {
+  text-align: center;
+  width: 50%;
+  color: rgb(52, 16, 98);
+}
+.register-input:focus {
+  width: 50%;
+}
+.alert-dangerMdp {
+  margin: 0;
+  padding: 15px 0;
+  background: rgb(184, 44, 172);
+  border: 5px rgb(145, 69, 245) solid;
+  border-radius: 20px;
+  max-width: 50%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Sansita Swashed", cursive;
+}
+.alert-dangerMail {
+  margin: 0;
+  padding: 15px 0;
+  background: rgb(255, 85, 241);
+  border: 5px rgb(145, 69, 245) solid;
+  border-radius: 20px;
+  max-width: 50%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Sansita Swashed", cursive;
+}
+.alert-success {
+  margin: 0;
+  padding: 15px 0;
+  background: rgb(200, 145, 251);
+  border: 5px rgb(145, 69, 245) solid;
+  border-radius: 20px;
+  max-width: 50%;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Sansita Swashed", cursive;
+}
+.alert-undefined {
+  background: rgb(145, 69, 245);
+  margin: 0;
+  padding: 0;
+}

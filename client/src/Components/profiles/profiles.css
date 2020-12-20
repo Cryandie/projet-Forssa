@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Nerko+One&family=Yellowtail&display=swap");
+
+.profilescontainer {
+  margin-top: 30px;
+}
+.profiles {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: space-between;
+  margin-left: 25%;
+}
+.profilestitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+  color: rgb(94, 39, 146);
+  font-family: "Acme", sans-serif;
+  font-weight: bolder;
+}
+.formbtns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.modalform input {
+  text-align: center;
+  margin-left: 25px;
+  background-color: rgba(146, 73, 214, 0.678);
+  color: #fff;
+  font-weight: bolder;
+}
+.modalform input:focus {
+  max-width: 90%;
+  border: 0;
+  border-bottom: 5px solid #9d43f1;
+}
+.modaltitle {
+  text-align: center;
+  margin-left: 25px;
+  font-weight: bolder;
+  color: rgb(212, 41, 170);
+}
+
+.profilecards {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 35px;
+  margin-right: 20px;
+}
+.card-title {
+  background-color: rgba(145, 69, 245, 0.829);
+  font-size: 30px;
+  font-family: "Acme", sans-serif;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.card-txt {
+  background-color: rgba(145, 69, 245, 0.554);
+  color: #fff;
+  font-family: "Acme", sans-serif;
+  border-radius: 10px;
+}
+
+.card-dyn-txt {
+  padding-left: 15px;
+  font-weight: bolder;
+  color: rgb(107, 35, 240);
+}
+
+.card-txt:nth-child(2) {
+  padding-left: 25px;
+}
+.card-txt:nth-child(3) {
+  padding-left: 12px;
+}
+.card-txt:nth-child(4) {
+  padding-left: 17px;
+}
+.card-txt:nth-child(5) {
+  padding-left: 50px;
+}
+.card-prof {
+  background-color: rgba(145, 69, 245, 0.185) !important;
+  max-height: fit-content;
+}
