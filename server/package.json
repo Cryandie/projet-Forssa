@@ -2,14 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "nodemon --exec babel-node server/server.js",
-    "server": "nodemon server",
-    "client": "npm start --prefix client",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently \"cd client && npm start\"     \"cd server && npx nodemon server\"  ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

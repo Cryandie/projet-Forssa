@@ -7,7 +7,7 @@
     "node": "15.5.0"
   },
   "scripts": {
-    "start": "nodemon --exec babel-node server/server.js",
+    "start": "node server/server.js",
     "server": "nodemon server",
     "client": "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1",
