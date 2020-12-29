@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const ConnectDB = require("./Config/ConnectDB");
+const path = require("path");
 const usersRouter = require("./Routes/users");
 const profileRoute = require("./Routes/profile");
 const authRoute = require("./Routes/auth");
@@ -17,7 +18,18 @@ ConnectDB();
 app.use("/api/profile", profileRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/posts", postsRoute);
-app.use('/api/feedback', feedbackRoute)
+app.use("/api/feedback", feedbackRoute);
+
+//Production serve static assets
+if (process.env.NODE_ENV === "production") {
+  //Set Static folder
+  app.use(express.static("client/build"));
+
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
+
 //4 Connect to Server
 const PORT = process.env.PORT || 7000;
 
