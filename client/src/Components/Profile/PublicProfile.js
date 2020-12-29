@@ -2,7 +2,7 @@ import "./profile.css";
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import { Link, Redirect } from "react-router-dom";
+// import { Link, Redirect } from "react-router-dom";
 import { getProfileById } from "../../actions/profile";
 import { Card } from "react-bootstrap";
 import Avatar from "../../Assets/Avatar.png";
@@ -41,7 +41,7 @@ const PublicProfile = ({
   });
   useEffect(() => {
     setFeedBackData({
-      profileId: loading || !profile?._id ? "" : profile?._id,
+      profileId: loading || !profile._id ? "" : profile._id,
     });
   }, [loading, profile]);
   const { content, rating } = feedBackData;
