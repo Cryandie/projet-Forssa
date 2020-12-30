@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server",
+    "start": "nodemon --exec babel-node server/server.js",
     "client": "npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"cd client && npm start\"     \"cd server && npx nodemon server\"  ",
