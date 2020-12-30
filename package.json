@@ -7,7 +7,6 @@
     "node": "15.5.0"
   },
   "scripts": {
-    "start": "cd server && npm start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"cd client && npm start\"     \"cd server && npx nodemon server\"  "
   },
